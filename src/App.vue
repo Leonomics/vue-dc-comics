@@ -4,12 +4,14 @@
     <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
     <HeaderItem></HeaderItem>
     <MainItem></MainItem>
+    <FooterItem></FooterItem>
   </div>
 </template>
 
 <script>
 import HeaderItem from './components/HeaderItem.vue'
 import MainItem from './components/MainItem.vue'
+import FooterItem from './components/FooterItem.vue'
 //import HelloWorld from './components/HelloWorld.vue'
 
 export default {
@@ -18,6 +20,7 @@ export default {
     //HelloWorld,
     HeaderItem,
     MainItem,
+    FooterItem,
 }
 }
 </script>

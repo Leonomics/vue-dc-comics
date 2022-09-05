@@ -1,6 +1,8 @@
 <template>
     <main>
-    -->Content goes here&lt;--
+        <div class="content container">
+        -->Content goes here&lt;--
+        </div>
     </main>
 </template>
 
@@ -12,7 +14,13 @@
 
 <style scoped lang="scss">
     main{
+        display: flex;
+        align-items: flex-start;
         background-color: black;
         color: white;
+        height: 130px;
+    }
+    .content{
+        align-self: center;
     }
 </style>

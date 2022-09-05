@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="container">
             <img src="../vue-dc-comics-1/img/dc-logo.png">
             <ul class="site_navigation_options">
                 <li>CHARACTERS</li>
@@ -26,7 +26,7 @@
     header{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .site_navigation_options{
         display: flex;
