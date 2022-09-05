@@ -15,7 +15,7 @@
 <style scoped lang="scss">
     main{
         display: flex;
-        align-items: flex-start;
+        justify-content:flex-start;
         background-color: black;
         color: white;
         height: 130px;

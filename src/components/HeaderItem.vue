@@ -34,5 +34,11 @@
     }
     li{
         padding: 50px 15px;
+        border: 2px solid transparent;
+        &:hover{
+            border-bottom: 2px solid blue;
+            cursor: pointer;
+            color: blue;
+        }
     }
 </style>

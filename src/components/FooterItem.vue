@@ -1,32 +1,32 @@
 <template>
     <footer>
-        <div class="container">
+        <div class="productsAndShopsWrapper">
             <ul class="productsAndShops container">
-            <li>
+            <li class="imgAndText">
                 <img src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
                 <h3>
                     DIGITAL COMICS
                 </h3>
             </li>
-            <li>
+            <li class="imgAndText">
                 <img src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
                 <h3>
                     DIGITAL COMICS
                 </h3>
             </li>
-            <li>
+            <li class="imgAndText">
                 <img src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
                 <h3>
                     DIGITAL COMICS
                 </h3>
             </li>
-            <li>
+            <li class="imgAndText">
                 <img src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
                 <h3>
                     DIGITAL COMICS
                 </h3>
             </li>
-            <li>
+            <li class="imgAndText">
                 <img src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
                 <h3>
                     DIGITAL COMICS
@@ -34,7 +34,73 @@
             </li>
         </ul>
         </div>
-        
+        <div class="footerBiggerSection">
+            <div class="footerBiggerWrapper container">
+                <div class="columnsWrapper">
+                <div class="dCComicsAndShopWrapper">
+                    <div class="dCComics">
+                        <h3>DC COMICS</h3>
+                        <ul>
+                            <li>Characters</li>
+                            <li>Comics</li>
+                            <li>Movies</li>
+                            <li>TV</li>
+                            <li>Games</li>
+                            <li>Videos</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="shop">
+                        <h3>SHOP</h3>
+                        <ul>
+                            <li>Shop DC</li>
+                            <li>Shop DC collectibles</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dC">
+                    <h3>DC</h3>
+                    <ul>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div>
+                <div class="sites">
+                    <h3>SITES</h3>
+                    <ul>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src="../vue-dc-comics-1/img/dc-logo-bg.png">
+            </div>
+            </div>
+            
+        </div>
+
+        <div class="socialFooter">
+            <button class="signUpButton">SIGN-UP NOW</button>
+            <div>
+                <h3>FOLLOW US</h3>
+                <img src="../vue-dc-comics-1/img/footer-facebook.png" alt=""
+                ><img src="../vue-dc-comics-1/img/footer-twitter.png" alt="">
+                <img src="../vue-dc-comics-1/img/footer-youtube.png" alt="">
+                <img src="../vue-dc-comics-1/img/footer-pinterest.png" alt="">
+                <img src="../vue-dc-comics-1/img/footer-periscope.png" alt="">
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -51,6 +117,55 @@
         height: 130px;
     }
     .productsAndShops{
-
+        display: flex;
+    }
+    .imgAndText{
+        display: flex;
+        align-self: center;
+    }
+    .productsAndShopsWrapper{
+        background-color: #0282f9;
+    }
+    img{
+    
+    }
+    h3{
+        align-self: center;
+    }
+    .footerBiggerSection{
+        background-image: url("../vue-dc-comics-1/img/footer-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .footerBiggerWrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .dCComicsAndShopWrapper{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-right: 52px;
+    }
+    .columnsWrapper{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        text-align: left;
+        color: white;
+    }
+    .dC{
+        margin-right: 52px;
+        margin-top: 40px;
+    }
+    .dCComics{
+        margin-bottom: 24px;
+        margin-top: 40px;
+    }
+    .sites{
+        margin-top: 40px;
+    }
+    .shop{
+        margin-bottom: 40px;
     }
 </style>
