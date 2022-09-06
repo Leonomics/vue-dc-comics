@@ -39,7 +39,8 @@
         height: 80px;
     }
     li{
-        padding: 50px 15px;
+        padding-bottom: 50px;
+        padding-top: 50px;
         border: 2px solid transparent;
         &:hover{
             border-bottom: 2px solid #0282f9;

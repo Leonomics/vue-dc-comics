@@ -1,7 +1,8 @@
 <template>
     <div class="grid-container">
         <div v-for="(comic, index) in comics" :key="index" class="grid-item">
-            {{comic.series}}
+            <img class="comicCover" :src="comic.thumb" />
+            {{comic.series.toUpperCase()}}
         </div>
     </div>
 </template>
@@ -20,7 +21,7 @@
             comics:[
             {
         "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
-        "price": "$19.99",
+        "price": "$19.99",  
         "series": "Action Comics",
         "type": "comic book"
     },
@@ -100,5 +101,19 @@
 <style scoped lang="scss">
     .grid-container {
         display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        padding: 10px;
+        column-gap: 26px;
+    }
+    .grid-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:186px;
+        font-size: 1rem;
+    }
+    .comicCover{
+        width:186px;
+        height: 186px;
     }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="container">
+        <div class="mainContainer container">
             <ComicsItem></ComicsItem>
         </div>
     </main>
@@ -17,6 +17,10 @@
 <style scoped lang="scss">
     main{
         color: white;
-        height: 130px;
+        background-color: black;
+    }
+    .mainContainer{
+        display: flex;
+        align-items: center;
     }
 </style>
