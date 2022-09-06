@@ -1,26 +1,22 @@
 <template>
     <main>
-        <div class="content container">
-        -->Content goes here&lt;--
+        <div class="container">
+            <ComicsItem></ComicsItem>
         </div>
     </main>
 </template>
 
 <script>
+    import ComicsItem from './ComicsItem.vue'
     export default{
-        name: 'MainItem',
-    }
+    name: "MainItem",
+    components: { ComicsItem }
+}
 </script>
 
 <style scoped lang="scss">
     main{
-        display: flex;
-        justify-content:flex-start;
-        background-color: black;
         color: white;
         height: 130px;
-    }
-    .content{
-        align-self: center;
     }
 </style>

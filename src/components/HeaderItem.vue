@@ -1,6 +1,6 @@
 <template>
     <header class="container">
-            <img src="../vue-dc-comics-1/img/dc-logo.png">
+            <img class="dCLogo" src="../vue-dc-comics-1/img/dc-logo.png">
             <ul class="site_navigation_options">
                 <li>CHARACTERS</li>
                 <li>COMICS</li>
@@ -27,10 +27,16 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
     .site_navigation_options{
         display: flex;
         flex-direction: row;
+        max-width: 710px;
+    }
+    .dCLogo{
+        width: 80px;
+        height: 80px;
     }
     li{
         padding: 50px 15px;
