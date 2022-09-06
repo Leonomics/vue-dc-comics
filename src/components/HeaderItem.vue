@@ -36,9 +36,9 @@
         padding: 50px 15px;
         border: 2px solid transparent;
         &:hover{
-            border-bottom: 2px solid blue;
+            border-bottom: 2px solid #0282f9;
             cursor: pointer;
-            color: blue;
+            color: #0282f9;
         }
     }
 </style>

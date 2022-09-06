@@ -3,32 +3,32 @@
         <div class="productsAndShopsWrapper">
             <ul class="productsAndShops container">
             <li class="imgAndText">
-                <img src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
-                <h3>
+                <img class="buyImg" src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
+                <h3 class="buyTitle">
                     DIGITAL COMICS
                 </h3>
             </li>
             <li class="imgAndText">
-                <img src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
-                <h3>
+                <img class="buyImg" src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
+                <h3 class="buyTitle">
                     DIGITAL COMICS
                 </h3>
             </li>
             <li class="imgAndText">
-                <img src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
-                <h3>
+                <img class="buyImg" src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
+                <h3 class="buyTitle">
                     DIGITAL COMICS
                 </h3>
             </li>
             <li class="imgAndText">
-                <img src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
-                <h3>
+                <img class="buyImg" src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
+                <h3 class="buyTitle">
                     DIGITAL COMICS
                 </h3>
             </li>
             <li class="imgAndText">
-                <img src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
-                <h3>
+                <img class="buyImg" src="../vue-dc-comics-1/img/buy-comics-digital-comics.png">
+                <h3 class="buyTitle">
                     DIGITAL COMICS
                 </h3>
             </li>
@@ -89,16 +89,17 @@
             </div>
             
         </div>
-
         <div class="socialFooter">
-            <button class="signUpButton">SIGN-UP NOW</button>
-            <div>
-                <h3>FOLLOW US</h3>
-                <img src="../vue-dc-comics-1/img/footer-facebook.png" alt=""
-                ><img src="../vue-dc-comics-1/img/footer-twitter.png" alt="">
-                <img src="../vue-dc-comics-1/img/footer-youtube.png" alt="">
-                <img src="../vue-dc-comics-1/img/footer-pinterest.png" alt="">
-                <img src="../vue-dc-comics-1/img/footer-periscope.png" alt="">
+            <div class="socialFooterWrapper container">
+                    <button class="signUpButton">SIGN-UP NOW</button>
+                    <div class="socialIcons">
+                    <h3 class="followUs">FOLLOW US</h3>
+                    <img class="socialIcon" src="../vue-dc-comics-1/img/footer-facebook.png" alt="">
+                    <img class="socialIcon" src="../vue-dc-comics-1/img/footer-twitter.png" alt="">
+                    <img class="socialIcon" src="../vue-dc-comics-1/img/footer-youtube.png" alt="">
+                    <img class="socialIcon" src="../vue-dc-comics-1/img/footer-pinterest.png" alt="">
+                    <img class="socialIcon" src="../vue-dc-comics-1/img/footer-periscope.png" alt="">
+                    </div>
             </div>
         </div>
     </footer>
@@ -126,8 +127,12 @@
     .productsAndShopsWrapper{
         background-color: #0282f9;
     }
-    img{
-    
+    .buyImg{
+        height: 64px;
+        width: 32px;
+        margin-right: 16px;
+        margin-top: 48px;
+        margin-bottom: 48px;
     }
     h3{
         align-self: center;
@@ -168,4 +173,41 @@
     .shop{
         margin-bottom: 40px;
     }
+    .socialFooter{
+        background-color: #303030;
+    }
+    .signUpButton{
+        background-color: transparent;
+        padding: 16px;
+        border: 2px solid #0282f9;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .socialFooterWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .socialIcons{
+        display: flex;
+    }
+    .socialIcon:not(:last-child){
+        margin-right: 14px;
+    }
+    .socialIcon{
+        width:32px;
+        height: 32px;
+        align-self: center;
+    }
+    .followUs{
+        margin-right: 14px;
+        color:#0282f9;
+    }
+    .buyTitle{
+        color: white;
+        font-size: 1rem;
+        margin-right: 72px;
+        white-space: nowrap;
+    }
+    
 </style>
