@@ -109,7 +109,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width:186px;
         font-size: 1rem;
     }
     .comicCover{
