@@ -83,8 +83,8 @@
                     </ul>
                 </div>
             </div>
-            <div>
-                <img src="../vue-dc-comics-1/img/dc-logo-bg.png">
+            <div class="bigDCLogo">
+            
             </div>
             </div>
             
@@ -208,6 +208,15 @@
         font-size: 1rem;
         margin-right: 72px;
         white-space: nowrap;
+    }
+    .bigDCLogo{
+        height: 120%;
+        background-image: url(../vue-dc-comics-1/img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+        width: 800px;
+        background-size: auto 130%;
     }
     
 </style>

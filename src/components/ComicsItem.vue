@@ -108,7 +108,7 @@
     .grid-item{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;    
         font-size: 1rem;
     }
     .comicCover{
